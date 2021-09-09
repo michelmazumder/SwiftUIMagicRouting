@@ -3,21 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D0EC7FB626E9EF8A0074DA7C /* TestMagicRoutingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FA326E9EF880074DA7C /* TestMagicRoutingApp.swift */; };
 		D0EC7FB726E9EF8A0074DA7C /* TestMagicRoutingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FA326E9EF880074DA7C /* TestMagicRoutingApp.swift */; };
-		D0EC7FB826E9EF8A0074DA7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FA426E9EF880074DA7C /* ContentView.swift */; };
-		D0EC7FB926E9EF8A0074DA7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FA426E9EF880074DA7C /* ContentView.swift */; };
 		D0EC7FBA26E9EF8A0074DA7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0EC7FA526E9EF8A0074DA7C /* Assets.xcassets */; };
 		D0EC7FBB26E9EF8A0074DA7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0EC7FA526E9EF8A0074DA7C /* Assets.xcassets */; };
+		D0EC7FC626E9F0A10074DA7C /* AppBackbone.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FC526E9F0A10074DA7C /* AppBackbone.swift */; };
+		D0EC7FC726E9F0A10074DA7C /* AppBackbone.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FC526E9F0A10074DA7C /* AppBackbone.swift */; };
+		D0EC7FD226E9F0CF0074DA7C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FC926E9F0CF0074DA7C /* LoginViewModel.swift */; };
+		D0EC7FD326E9F0CF0074DA7C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FC926E9F0CF0074DA7C /* LoginViewModel.swift */; };
+		D0EC7FD426E9F0CF0074DA7C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FCA26E9F0CF0074DA7C /* LoginView.swift */; };
+		D0EC7FD526E9F0CF0074DA7C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FCA26E9F0CF0074DA7C /* LoginView.swift */; };
+		D0EC7FD626E9F0CF0074DA7C /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FCC26E9F0CF0074DA7C /* MainMenuView.swift */; };
+		D0EC7FD726E9F0CF0074DA7C /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FCC26E9F0CF0074DA7C /* MainMenuView.swift */; };
+		D0EC7FD826E9F0CF0074DA7C /* MenuChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FCD26E9F0CF0074DA7C /* MenuChoiceView.swift */; };
+		D0EC7FD926E9F0CF0074DA7C /* MenuChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FCD26E9F0CF0074DA7C /* MenuChoiceView.swift */; };
+		D0EC7FDA26E9F0CF0074DA7C /* MenuChoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FCE26E9F0CF0074DA7C /* MenuChoiceViewModel.swift */; };
+		D0EC7FDB26E9F0CF0074DA7C /* MenuChoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FCE26E9F0CF0074DA7C /* MenuChoiceViewModel.swift */; };
+		D0EC7FDC26E9F0CF0074DA7C /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FD026E9F0CF0074DA7C /* MenuModel.swift */; };
+		D0EC7FDD26E9F0CF0074DA7C /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FD026E9F0CF0074DA7C /* MenuModel.swift */; };
+		D0EC7FDE26E9F0CF0074DA7C /* MainMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FD126E9F0CF0074DA7C /* MainMenuViewModel.swift */; };
+		D0EC7FDF26E9F0CF0074DA7C /* MainMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FD126E9F0CF0074DA7C /* MainMenuViewModel.swift */; };
+		D0EC7FE226E9F13E0074DA7C /* SwiftUIMagicRouting in Frameworks */ = {isa = PBXBuildFile; productRef = D0EC7FE126E9F13E0074DA7C /* SwiftUIMagicRouting */; };
+		D0EC7FE426E9F1580074DA7C /* SwiftUIMagicRouting in Frameworks */ = {isa = PBXBuildFile; productRef = D0EC7FE326E9F1580074DA7C /* SwiftUIMagicRouting */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D0EC7FA326E9EF880074DA7C /* TestMagicRoutingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMagicRoutingApp.swift; sourceTree = "<group>"; };
-		D0EC7FA426E9EF880074DA7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D0EC7FA526E9EF8A0074DA7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0EC7FAA26E9EF8A0074DA7C /* TestMagicRouting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMagicRouting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0EC7FAD26E9EF8A0074DA7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -25,6 +40,14 @@
 		D0EC7FB426E9EF8A0074DA7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0EC7FB526E9EF8A0074DA7C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		D0EC7FC426E9EFAA0074DA7C /* SwiftUIMagicRouting */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SwiftUIMagicRouting; path = ../SwiftUIMagicRouting; sourceTree = "<group>"; };
+		D0EC7FC526E9F0A10074DA7C /* AppBackbone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBackbone.swift; sourceTree = "<group>"; };
+		D0EC7FC926E9F0CF0074DA7C /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		D0EC7FCA26E9F0CF0074DA7C /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D0EC7FCC26E9F0CF0074DA7C /* MainMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		D0EC7FCD26E9F0CF0074DA7C /* MenuChoiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuChoiceView.swift; sourceTree = "<group>"; };
+		D0EC7FCE26E9F0CF0074DA7C /* MenuChoiceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuChoiceViewModel.swift; sourceTree = "<group>"; };
+		D0EC7FD026E9F0CF0074DA7C /* MenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		D0EC7FD126E9F0CF0074DA7C /* MainMenuViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0EC7FE226E9F13E0074DA7C /* SwiftUIMagicRouting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0EC7FE426E9F1580074DA7C /* SwiftUIMagicRouting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,14 +78,17 @@
 				D0EC7FAC26E9EF8A0074DA7C /* iOS */,
 				D0EC7FB326E9EF8A0074DA7C /* macOS */,
 				D0EC7FAB26E9EF8A0074DA7C /* Products */,
+				D0EC7FE026E9F13E0074DA7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		D0EC7FA226E9EF880074DA7C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				D0EC7FC826E9F0CF0074DA7C /* Login */,
+				D0EC7FCB26E9F0CF0074DA7C /* MainMenu */,
+				D0EC7FC526E9F0A10074DA7C /* AppBackbone.swift */,
 				D0EC7FA326E9EF880074DA7C /* TestMagicRoutingApp.swift */,
-				D0EC7FA426E9EF880074DA7C /* ContentView.swift */,
 				D0EC7FA526E9EF8A0074DA7C /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -92,6 +120,42 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		D0EC7FC826E9F0CF0074DA7C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D0EC7FC926E9F0CF0074DA7C /* LoginViewModel.swift */,
+				D0EC7FCA26E9F0CF0074DA7C /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D0EC7FCB26E9F0CF0074DA7C /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				D0EC7FCC26E9F0CF0074DA7C /* MainMenuView.swift */,
+				D0EC7FCD26E9F0CF0074DA7C /* MenuChoiceView.swift */,
+				D0EC7FCE26E9F0CF0074DA7C /* MenuChoiceViewModel.swift */,
+				D0EC7FCF26E9F0CF0074DA7C /* Model */,
+				D0EC7FD126E9F0CF0074DA7C /* MainMenuViewModel.swift */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		D0EC7FCF26E9F0CF0074DA7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0EC7FD026E9F0CF0074DA7C /* MenuModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0EC7FE026E9F13E0074DA7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,6 +172,9 @@
 			dependencies = (
 			);
 			name = "TestMagicRouting (iOS)";
+			packageProductDependencies = (
+				D0EC7FE126E9F13E0074DA7C /* SwiftUIMagicRouting */,
+			);
 			productName = "TestMagicRouting (iOS)";
 			productReference = D0EC7FAA26E9EF8A0074DA7C /* TestMagicRouting.app */;
 			productType = "com.apple.product-type.application";
@@ -125,6 +192,9 @@
 			dependencies = (
 			);
 			name = "TestMagicRouting (macOS)";
+			packageProductDependencies = (
+				D0EC7FE326E9F1580074DA7C /* SwiftUIMagicRouting */,
+			);
 			productName = "TestMagicRouting (macOS)";
 			productReference = D0EC7FB226E9EF8A0074DA7C /* TestMagicRouting.app */;
 			productType = "com.apple.product-type.application";
@@ -189,7 +259,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0EC7FB826E9EF8A0074DA7C /* ContentView.swift in Sources */,
+				D0EC7FDA26E9F0CF0074DA7C /* MenuChoiceViewModel.swift in Sources */,
+				D0EC7FD826E9F0CF0074DA7C /* MenuChoiceView.swift in Sources */,
+				D0EC7FDE26E9F0CF0074DA7C /* MainMenuViewModel.swift in Sources */,
+				D0EC7FDC26E9F0CF0074DA7C /* MenuModel.swift in Sources */,
+				D0EC7FD626E9F0CF0074DA7C /* MainMenuView.swift in Sources */,
+				D0EC7FD226E9F0CF0074DA7C /* LoginViewModel.swift in Sources */,
+				D0EC7FC626E9F0A10074DA7C /* AppBackbone.swift in Sources */,
+				D0EC7FD426E9F0CF0074DA7C /* LoginView.swift in Sources */,
 				D0EC7FB626E9EF8A0074DA7C /* TestMagicRoutingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,7 +275,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0EC7FB926E9EF8A0074DA7C /* ContentView.swift in Sources */,
+				D0EC7FDB26E9F0CF0074DA7C /* MenuChoiceViewModel.swift in Sources */,
+				D0EC7FD926E9F0CF0074DA7C /* MenuChoiceView.swift in Sources */,
+				D0EC7FDF26E9F0CF0074DA7C /* MainMenuViewModel.swift in Sources */,
+				D0EC7FDD26E9F0CF0074DA7C /* MenuModel.swift in Sources */,
+				D0EC7FD726E9F0CF0074DA7C /* MainMenuView.swift in Sources */,
+				D0EC7FD326E9F0CF0074DA7C /* LoginViewModel.swift in Sources */,
+				D0EC7FC726E9F0A10074DA7C /* AppBackbone.swift in Sources */,
+				D0EC7FD526E9F0CF0074DA7C /* LoginView.swift in Sources */,
 				D0EC7FB726E9EF8A0074DA7C /* TestMagicRoutingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +525,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D0EC7FE126E9F13E0074DA7C /* SwiftUIMagicRouting */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftUIMagicRouting;
+		};
+		D0EC7FE326E9F1580074DA7C /* SwiftUIMagicRouting */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftUIMagicRouting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D0EC7F9E26E9EF880074DA7C /* Project object */;
 }

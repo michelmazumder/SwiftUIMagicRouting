@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import SwiftUIMagicRouting
 
 @main
 struct TestMagicRoutingApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+	
+	var mainView: AnyView { AppBackbone.shared.magicRouter.getRootView() }
+	
+	var body: some Scene {
+		WindowGroup {
+			mainView
+		}
+	}
+	
 }
