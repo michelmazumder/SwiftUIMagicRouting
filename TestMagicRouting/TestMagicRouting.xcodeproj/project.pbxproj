@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0EC7FB626E9EF8A0074DA7C /* TestMagicRoutingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FA326E9EF880074DA7C /* TestMagicRoutingApp.swift */; };
+		D0EC7FB726E9EF8A0074DA7C /* TestMagicRoutingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FA326E9EF880074DA7C /* TestMagicRoutingApp.swift */; };
+		D0EC7FB826E9EF8A0074DA7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FA426E9EF880074DA7C /* ContentView.swift */; };
+		D0EC7FB926E9EF8A0074DA7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FA426E9EF880074DA7C /* ContentView.swift */; };
+		D0EC7FBA26E9EF8A0074DA7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0EC7FA526E9EF8A0074DA7C /* Assets.xcassets */; };
+		D0EC7FBB26E9EF8A0074DA7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0EC7FA526E9EF8A0074DA7C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D0EC7FA326E9EF880074DA7C /* TestMagicRoutingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMagicRoutingApp.swift; sourceTree = "<group>"; };
+		D0EC7FA426E9EF880074DA7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D0EC7FA526E9EF8A0074DA7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0EC7FAA26E9EF8A0074DA7C /* TestMagicRouting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMagicRouting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0EC7FAD26E9EF8A0074DA7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0EC7FB226E9EF8A0074DA7C /* TestMagicRouting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMagicRouting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0EC7FB426E9EF8A0074DA7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0EC7FB526E9EF8A0074DA7C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		D0EC7FC426E9EFAA0074DA7C /* SwiftUIMagicRouting */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SwiftUIMagicRouting; path = ../SwiftUIMagicRouting; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0EC7FA726E9EF8A0074DA7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0EC7FAF26E9EF8A0074DA7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0EC7F9D26E9EF880074DA7C = {
+			isa = PBXGroup;
+			children = (
+				D0EC7FC426E9EFAA0074DA7C /* SwiftUIMagicRouting */,
+				D0EC7FA226E9EF880074DA7C /* Shared */,
+				D0EC7FAC26E9EF8A0074DA7C /* iOS */,
+				D0EC7FB326E9EF8A0074DA7C /* macOS */,
+				D0EC7FAB26E9EF8A0074DA7C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0EC7FA226E9EF880074DA7C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D0EC7FA326E9EF880074DA7C /* TestMagicRoutingApp.swift */,
+				D0EC7FA426E9EF880074DA7C /* ContentView.swift */,
+				D0EC7FA526E9EF8A0074DA7C /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D0EC7FAB26E9EF8A0074DA7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0EC7FAA26E9EF8A0074DA7C /* TestMagicRouting.app */,
+				D0EC7FB226E9EF8A0074DA7C /* TestMagicRouting.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0EC7FAC26E9EF8A0074DA7C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D0EC7FAD26E9EF8A0074DA7C /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		D0EC7FB326E9EF8A0074DA7C /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				D0EC7FB426E9EF8A0074DA7C /* Info.plist */,
+				D0EC7FB526E9EF8A0074DA7C /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0EC7FA926E9EF8A0074DA7C /* TestMagicRouting (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0EC7FBE26E9EF8A0074DA7C /* Build configuration list for PBXNativeTarget "TestMagicRouting (iOS)" */;
+			buildPhases = (
+				D0EC7FA626E9EF8A0074DA7C /* Sources */,
+				D0EC7FA726E9EF8A0074DA7C /* Frameworks */,
+				D0EC7FA826E9EF8A0074DA7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TestMagicRouting (iOS)";
+			productName = "TestMagicRouting (iOS)";
+			productReference = D0EC7FAA26E9EF8A0074DA7C /* TestMagicRouting.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0EC7FB126E9EF8A0074DA7C /* TestMagicRouting (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0EC7FC126E9EF8A0074DA7C /* Build configuration list for PBXNativeTarget "TestMagicRouting (macOS)" */;
+			buildPhases = (
+				D0EC7FAE26E9EF8A0074DA7C /* Sources */,
+				D0EC7FAF26E9EF8A0074DA7C /* Frameworks */,
+				D0EC7FB026E9EF8A0074DA7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TestMagicRouting (macOS)";
+			productName = "TestMagicRouting (macOS)";
+			productReference = D0EC7FB226E9EF8A0074DA7C /* TestMagicRouting.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0EC7F9E26E9EF880074DA7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D0EC7FA926E9EF8A0074DA7C = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					D0EC7FB126E9EF8A0074DA7C = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = D0EC7FA126E9EF880074DA7C /* Build configuration list for PBXProject "TestMagicRouting" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0EC7F9D26E9EF880074DA7C;
+			productRefGroup = D0EC7FAB26E9EF8A0074DA7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0EC7FA926E9EF8A0074DA7C /* TestMagicRouting (iOS) */,
+				D0EC7FB126E9EF8A0074DA7C /* TestMagicRouting (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0EC7FA826E9EF8A0074DA7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0EC7FBA26E9EF8A0074DA7C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0EC7FB026E9EF8A0074DA7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0EC7FBB26E9EF8A0074DA7C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0EC7FA626E9EF8A0074DA7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0EC7FB826E9EF8A0074DA7C /* ContentView.swift in Sources */,
+				D0EC7FB626E9EF8A0074DA7C /* TestMagicRoutingApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0EC7FAE26E9EF8A0074DA7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0EC7FB926E9EF8A0074DA7C /* ContentView.swift in Sources */,
+				D0EC7FB726E9EF8A0074DA7C /* TestMagicRoutingApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D0EC7FBC26E9EF8A0074DA7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D0EC7FBD26E9EF8A0074DA7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D0EC7FBF26E9EF8A0074DA7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4954AJG9U8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mm.TestMagicRouting;
+				PRODUCT_NAME = TestMagicRouting;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0EC7FC026E9EF8A0074DA7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4954AJG9U8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mm.TestMagicRouting;
+				PRODUCT_NAME = TestMagicRouting;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0EC7FC226E9EF8A0074DA7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4954AJG9U8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mm.TestMagicRouting;
+				PRODUCT_NAME = TestMagicRouting;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D0EC7FC326E9EF8A0074DA7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4954AJG9U8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mm.TestMagicRouting;
+				PRODUCT_NAME = TestMagicRouting;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0EC7FA126E9EF880074DA7C /* Build configuration list for PBXProject "TestMagicRouting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0EC7FBC26E9EF8A0074DA7C /* Debug */,
+				D0EC7FBD26E9EF8A0074DA7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0EC7FBE26E9EF8A0074DA7C /* Build configuration list for PBXNativeTarget "TestMagicRouting (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0EC7FBF26E9EF8A0074DA7C /* Debug */,
+				D0EC7FC026E9EF8A0074DA7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0EC7FC126E9EF8A0074DA7C /* Build configuration list for PBXNativeTarget "TestMagicRouting (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0EC7FC226E9EF8A0074DA7C /* Debug */,
+				D0EC7FC326E9EF8A0074DA7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0EC7F9E26E9EF880074DA7C /* Project object */;
+}
