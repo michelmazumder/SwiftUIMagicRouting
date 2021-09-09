@@ -32,7 +32,8 @@ public class MagicRouter {
 		return AnyView(v)
 	}
 	
-	public func register(route: MagicRoute, viewBuilder: MagicViewFactory) {
+	public func register(route: MagicRoute, viewBuilder: MagicViewFactory) -> MagicRouter {
 		viewBuilders[route] = viewBuilder
+		return self
 	}
 }

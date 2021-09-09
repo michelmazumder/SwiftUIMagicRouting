@@ -21,7 +21,6 @@ class MainMenuViewModel : MagicBaseViewModel {
 	var dataModel = MenuModel()
 	
 	override init() {
-		// define routes from here
 		let items = ["scelta 1", "scelta 2", "scelta 3"]
 		self.items = items
 		let currentRoute = MagicRoute(path: ["MainMenu"])
