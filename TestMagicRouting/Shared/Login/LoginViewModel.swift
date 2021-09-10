@@ -18,8 +18,19 @@ class LoginViewModel: MagicBaseViewModel {
 	
 	
 	override init() {
-		// define routes from here
-		AppBackbone.shared.magicRouter.register(route: MagicRoute(path: ["MainMenu"]), viewBuilder: MainMenuMagicFactory())
+		
+		// let moduleName = Bundle.main.infoDictionary!["CFBundleName"] as! String
+		// print("Module name = '\(moduleName)'")
+		
+		guard let loaderClass = Bundle.main.classNamed("TestMagicRouting.MainMenuStoryboardLoader") as? StoryboardLoader.Type else {
+			print("Warning: impossibile caricare 'MainMenuStoryboardLoader'")
+			return
+		}
+		
+		AppBackbone.shared.magicRouter.storyboard?.append(
+			storyboard: loaderClass.init().loadStoryboard(),
+			respondingTo: "MainMenu")
+
 	}
 	
 	func login() {

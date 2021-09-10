@@ -6,9 +6,13 @@ public protocol MagicViewFactory {
 	func getView(binding: ViewDataModel?, storyboardFrame: StoryboardViewModel) -> AnyView
 }
 
-public class MagicRouter {
+
+public class MagicRouter: ObservableObject {
 	
-	private var viewBuilders = [MagicRoute: MagicViewFactory]()
+	private var viewBuilders: [MagicRoute: MagicViewFactory] {
+		storyboard?.viewBuildersMap ?? [:]
+	}
+	@Published public var storyboard: Storyboard? = nil
 	
 	public init() {}
 	
@@ -26,14 +30,10 @@ public class MagicRouter {
 	public func getView(for route: MagicRoute,
 						storyboardFrame: StoryboardViewModel,
 						binding dataModel: ViewDataModel? = nil) -> AnyView {
-		guard let v = viewBuilders[route]?
-				.getView(binding: dataModel, storyboardFrame: storyboardFrame)
-		else { return AnyView(Text("View for \(route.description) not found")) }
-		return AnyView(v)
-	}
-	
-	public func register(route: MagicRoute, viewBuilder: MagicViewFactory) -> MagicRouter {
-		viewBuilders[route] = viewBuilder
-		return self
+		
+		guard let v = viewBuilders[route]?.getView(binding: dataModel, storyboardFrame: storyboardFrame)
+		else { return Text("View for \(route.description) not found").padding().any() }
+		return v.any()
+		
 	}
 }

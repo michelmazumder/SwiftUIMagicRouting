@@ -3,7 +3,6 @@ import SwiftUI
 import SwiftUIMagicRouting
 
 struct MainMenuMagicFactory: MagicViewFactory {
-	
 	func getView(binding: ViewDataModel?, storyboardFrame: StoryboardViewModel) -> AnyView {
 		MainMenuView(
 			viewModel: MainMenuViewModel()
@@ -11,27 +10,25 @@ struct MainMenuMagicFactory: MagicViewFactory {
 		)
 		.any()
 	}
-	
 }
 
 
 class MainMenuViewModel : MagicBaseViewModel {
 	
-	@Published var items = ["scelta 1", "scelta 2", "scelta 3"]
+	@Published var ctas = ["scelta 1", "scelta 2", "scelta 3"]
 	var dataModel = MenuModel()
 	
 	override init() {
 		let items = ["scelta 1", "scelta 2", "scelta 3"]
-		self.items = items
-		let currentRoute = MagicRoute(path: ["MainMenu"])
-		AppBackbone.shared.magicRouter.register(route: currentRoute, viewBuilder: MainMenuMagicFactory())
-		items.forEach {
-			item in
-			AppBackbone.shared.magicRouter.register(
-				route: currentRoute.appending(subPath: item),
-				viewBuilder: MenuChoiceMagicFactory()
-			)
+		self.ctas = items
+		
+		let subStoryboard = Storyboard.createRootStoryboard(rootViewFactory: MainMenuMagicFactory()) { board in
+			items.forEach { cta in
+				board.addCta(cta: cta, viewFactory: MenuChoiceMagicFactory())
+			}
 		}
+		
+		AppBackbone.shared.magicRouter.storyboard?["MainMenu"]?.append(storyboard: subStoryboard, respondingTo: "MainMenu")
 	}
 	
 	func selectItem(item: String) {

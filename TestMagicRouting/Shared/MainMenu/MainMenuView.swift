@@ -13,7 +13,7 @@ struct MainMenuView: View {
 	
     var body: some View {
 		VStack {
-			ForEach(viewModel.items, id: \.self) {
+			ForEach(viewModel.ctas, id: \.self) {
 				item in
 				HStack {
 					Button(item) { viewModel.selectItem(item: item) }
@@ -21,7 +21,6 @@ struct MainMenuView: View {
 				.padding()
 			}
 		}
-		.frame(minWidth: 400, idealWidth: 600, minHeight: 450, idealHeight: 800)
     }
 }
 

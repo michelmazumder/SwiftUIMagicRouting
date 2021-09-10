@@ -27,7 +27,6 @@ struct MenuChoiceView: View {
 				.padding()
 
 		}
-		.frame(minWidth: 400, idealWidth: 600, minHeight: 450, idealHeight: 800)
 
     }
 }

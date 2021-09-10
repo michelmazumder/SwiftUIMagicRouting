@@ -10,7 +10,7 @@ import SwiftUIMagicRouting
 
 
 extension View {
-	func any() -> AnyView { return AnyView(self) }
+	func any() -> AnyView { return AnyView(self.frame(minWidth: 400, idealWidth: 600, minHeight: 450, idealHeight: 800)) }
 }
 
 class AppBackbone {
@@ -19,7 +19,7 @@ class AppBackbone {
 	
 	private init() {
 		// initialize main menu
-		magicRouter.register(route: MagicRoute(path: []), viewBuilder: LoginMagicFactory())
+		magicRouter.storyboard = Storyboard.createRootStoryboard(rootViewFactory: LoginMagicFactory())
 	}
 }
 

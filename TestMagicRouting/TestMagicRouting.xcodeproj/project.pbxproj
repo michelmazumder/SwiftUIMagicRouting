@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D079A78826EB477C00B60EA3 /* MainMenuStoryboardLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D079A78726EB477C00B60EA3 /* MainMenuStoryboardLoader.swift */; };
+		D079A78926EB477C00B60EA3 /* MainMenuStoryboardLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D079A78726EB477C00B60EA3 /* MainMenuStoryboardLoader.swift */; };
 		D0EC7FB626E9EF8A0074DA7C /* TestMagicRoutingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FA326E9EF880074DA7C /* TestMagicRoutingApp.swift */; };
 		D0EC7FB726E9EF8A0074DA7C /* TestMagicRoutingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EC7FA326E9EF880074DA7C /* TestMagicRoutingApp.swift */; };
 		D0EC7FBA26E9EF8A0074DA7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0EC7FA526E9EF8A0074DA7C /* Assets.xcassets */; };
@@ -32,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D079A78726EB477C00B60EA3 /* MainMenuStoryboardLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuStoryboardLoader.swift; sourceTree = "<group>"; };
 		D0EC7FA326E9EF880074DA7C /* TestMagicRoutingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMagicRoutingApp.swift; sourceTree = "<group>"; };
 		D0EC7FA526E9EF8A0074DA7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0EC7FAA26E9EF8A0074DA7C /* TestMagicRouting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMagicRouting.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,11 +135,12 @@
 		D0EC7FCB26E9F0CF0074DA7C /* MainMenu */ = {
 			isa = PBXGroup;
 			children = (
+				D079A78726EB477C00B60EA3 /* MainMenuStoryboardLoader.swift */,
 				D0EC7FCC26E9F0CF0074DA7C /* MainMenuView.swift */,
+				D0EC7FD126E9F0CF0074DA7C /* MainMenuViewModel.swift */,
 				D0EC7FCD26E9F0CF0074DA7C /* MenuChoiceView.swift */,
 				D0EC7FCE26E9F0CF0074DA7C /* MenuChoiceViewModel.swift */,
 				D0EC7FCF26E9F0CF0074DA7C /* Model */,
-				D0EC7FD126E9F0CF0074DA7C /* MainMenuViewModel.swift */,
 			);
 			path = MainMenu;
 			sourceTree = "<group>";
@@ -260,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0EC7FDA26E9F0CF0074DA7C /* MenuChoiceViewModel.swift in Sources */,
+				D079A78826EB477C00B60EA3 /* MainMenuStoryboardLoader.swift in Sources */,
 				D0EC7FD826E9F0CF0074DA7C /* MenuChoiceView.swift in Sources */,
 				D0EC7FDE26E9F0CF0074DA7C /* MainMenuViewModel.swift in Sources */,
 				D0EC7FDC26E9F0CF0074DA7C /* MenuModel.swift in Sources */,
@@ -276,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0EC7FDB26E9F0CF0074DA7C /* MenuChoiceViewModel.swift in Sources */,
+				D079A78926EB477C00B60EA3 /* MainMenuStoryboardLoader.swift in Sources */,
 				D0EC7FD926E9F0CF0074DA7C /* MenuChoiceView.swift in Sources */,
 				D0EC7FDF26E9F0CF0074DA7C /* MainMenuViewModel.swift in Sources */,
 				D0EC7FDD26E9F0CF0074DA7C /* MenuModel.swift in Sources */,
