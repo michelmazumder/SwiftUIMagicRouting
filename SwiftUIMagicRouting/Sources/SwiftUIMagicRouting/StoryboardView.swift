@@ -5,7 +5,19 @@ struct StoryboardView: View {
 	@ObservedObject var viewModel: StoryboardViewModel
 	
 	var body: some View {
-		viewModel.currentView
+		
+		Group {
+			if viewModel.showNextView {
+				viewModel.nextView
+					.transition(AnyTransition.move(edge: .leading))
+					.animation(.easeIn)
+			}
+			else {
+				viewModel.currentView
+					.transition(AnyTransition.move(edge: .trailing))
+					.animation(.easeOut)
+			}
+		}
 	}
 }
 

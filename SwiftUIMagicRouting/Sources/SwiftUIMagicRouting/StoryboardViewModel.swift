@@ -6,8 +6,6 @@ public class StoryboardViewModel : ObservableObject {
 	var magicRouter: MagicRouter?
 	var parentStoryboardFrame: StoryboardViewModel?
 	var viewDataModel: ViewDataModel?
-	var transitionType: AnyTransition? = AnyTransition.move(edge: .leading)
-	var animationType: Animation? = .easeIn
 	
 	@Published var currentNavigationPath: MagicRoute
 	@Published var nextSubPath: String? = nil
@@ -19,20 +17,42 @@ public class StoryboardViewModel : ObservableObject {
 	
 	// MARK: - Internal view management
 	
+	var showNextView: Bool { nextSubPath != nil }
+	
 	func onReturningFromNextView() {
 		nextSubPath = nil
 	}
 	
-	var currentView: AnyView {
-		
-		guard let transitionType = transitionType else { return currentViewWithoutTransition }
-		
-		return currentViewWithoutTransition
-			.transition(transitionType)
-			.animation(animationType)
-			.any()
+	@ViewBuilder func errorView(message: String) -> some View {
+		Text(message)
 	}
 	
+	@ViewBuilder var currentView: some View {
+		if let magicRouter = magicRouter {
+			magicRouter.getView(for: currentNavigationPath, storyboardFrame: self, binding: viewDataModel)
+		}
+		else {
+			errorView(message: "Magic route is nil")
+		}
+	}
+	
+	@ViewBuilder var nextView: some View {
+		if let nextSubPath = nextSubPath {
+			StoryboardView(
+				viewModel: StoryboardViewModel(
+					currentRoute: currentNavigationPath.appending(subPath: nextSubPath),
+					viewDataModel: self.viewDataModel
+				)
+				.inject(magicRouter: self.magicRouter)
+				.inject(parentStoryboardFrame: self)
+			)
+		}
+		else {
+			errorView(message: "NextSubPath is null")
+		}
+	}
+	
+	/*
 	var currentViewWithoutTransition: AnyView {
 		
 		if let nextSubPath = nextSubPath {
@@ -48,7 +68,7 @@ public class StoryboardViewModel : ObservableObject {
 		return magicRouter?.getView(for: currentNavigationPath, storyboardFrame: self, binding: viewDataModel).any()
 			?? Text("Magic route is nil").any()
 		
-	}
+	}*/
 	
 	// MARK: - Dependency injection
 	
@@ -68,8 +88,6 @@ public class StoryboardViewModel : ObservableObject {
 	public func navigate(subRoute: String, viewDataModel: ViewDataModel?) {
 		assert(nextSubPath == nil) // non dovrei navigare oltre
 		withAnimation {
-			self.transitionType = AnyTransition.move(edge: .leading)
-			self.animationType = .easeIn
 			self.viewDataModel = viewDataModel
 			nextSubPath = subRoute
 		}
@@ -77,10 +95,6 @@ public class StoryboardViewModel : ObservableObject {
 	
 	public func back() {
 		withAnimation {
-			self.transitionType = AnyTransition.move(edge: .trailing)
-			self.animationType = .easeOut
-			parentStoryboardFrame?.animationType = .easeOut
-			parentStoryboardFrame?.transitionType = AnyTransition.move(edge: .trailing)
 			parentStoryboardFrame?.onReturningFromNextView()
 		}
 	}
