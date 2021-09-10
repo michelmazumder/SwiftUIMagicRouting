@@ -52,24 +52,6 @@ public class StoryboardViewModel : ObservableObject {
 		}
 	}
 	
-	/*
-	var currentViewWithoutTransition: AnyView {
-		
-		if let nextSubPath = nextSubPath {
-			return StoryboardView(
-				viewModel: StoryboardViewModel(
-					currentRoute: currentNavigationPath.appending(subPath: nextSubPath),
-					viewDataModel: self.viewDataModel
-				)
-				.inject(magicRouter: self.magicRouter)
-				.inject(parentStoryboardFrame: self)
-			).any()
-		}
-		return magicRouter?.getView(for: currentNavigationPath, storyboardFrame: self, binding: viewDataModel).any()
-			?? Text("Magic route is nil").any()
-		
-	}*/
-	
 	// MARK: - Dependency injection
 	
 	func inject(magicRouter: MagicRouter?) -> StoryboardViewModel {
